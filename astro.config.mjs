@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   // SITE_URL and BASE_PATH are injected by Docker / CI; defaults keep local dev working without env vars.
-  site: process.env.SITE_URL || 'artie-portfolio-fxpv6gi3l-chris-bernards-projects-0c83516d.vercel.app',
+  site: process.env.SITE_URL || 'https://artie-portfolio-jg1ago6o1-chris-bernards-projects-0c83516d.vercel.app/',
   base: process.env.BASE_PATH || '/',
   trailingSlash: 'never',
   build: { format: 'file' },
