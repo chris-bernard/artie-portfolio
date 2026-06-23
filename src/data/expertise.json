@@ -1,28 +1,28 @@
 {
   "items": [
     {
-      "key": "sysadmin",
-      "icon": "server-stack",
-      "title": "Design & Art Direction",
-      "description": "Visual identity, layout, typography, and the aesthetic decisions that make people stop and look twice. Whether print or screen, the goal is the same — work that holds up."
+      "key": "aquarelle",
+      "icon": "",
+      "title": "Aquarelle",
+      "description": "Avec l’aquarelle, j’aime dessiner la nature. Ça me plaît parce que les couleurs ressortent bien."
     },
     {
-      "key": "webdev",
-      "icon": "code-bracket-square",
-      "title": "Web Design & Development",
-      "description": "From wireframe to deployment — building sites and apps that look considered, perform well, and give visitors exactly what they came for."
+      "key": "feutre",
+      "icon": "",
+      "title": "Feutre",
+      "description": "Avec les feutres, j’aime dessiner tout. Ça me plaît parce que je peux faire plein de détails."
     },
     {
-      "key": "freelance",
-      "icon": "user-circle",
-      "title": "Creative Freelance",
-      "description": "Independent project work in photography, video, 3D, illustration, or wherever the brief leads. Direct to work with, flexible, and invested in the outcome."
+      "key": "sculpture",
+      "icon": "",
+      "title": "Sculpture",
+      "description": "Avec des sculptures, j’aime représenter des personnages ou des objets. Ça me plaît parce qu’on peut s’amuser à faire des visages ou des formes rigolotes."
     },
     {
-      "key": "leadership",
-      "icon": "users",
-      "title": "Collaboration & Direction",
-      "description": "Working alongside teams, clients, and stakeholders to take a project from idea to shipped — clear communication, honest timelines, and work that actually gets done."
+      "key": "peinture",
+      "icon": "",
+      "title": "Peinture",
+      "description": "Avec la peinture, j’aime dessiner des paysages. Ça me plaît parce que les couleurs sont joyeuses."
     }
   ]
 }
