@@ -44,6 +44,7 @@ if (!isExternalCv && !hasLocalCv && existsSync(cvPublicDir)) {
 }
 
 const cvHref = isExternalCv ? cvValue : hasLocalCv ? cvValue : discoveredCv;
+const showCv = personalData.showCv;
 const hasCv = Boolean(cvHref);
 
 const photoValue = (personalData.photo ?? '').trim();
@@ -117,16 +118,17 @@ const hasPortrait =
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 reveal" style="transition-delay: 0.3s;">
-          <a href="#contact" class="btn-primary text-center">Get In Touch</a>
-          {hasCv ? (
+          <a href="#projects" class="btn-primary text-center">Voir mes œuvres</a>
+
+          { showCv && hasCv &&
             <a
               href={cvHref}
               target="_blank"
               rel="noopener noreferrer"
               class="btn-secondary text-center">Download CV</a>
-          ) : (
-            <button onclick="window.print()" class="btn-secondary text-center">Print Resume</button>
-          )}
+          }
+          {showCv && !hasCv && <button onclick="window.print()" class="btn-secondary text-center">Print Resume</button>}
+
         </div>
 
         <div class="flex items-center gap-6 reveal" style="transition-delay: 0.4s;">
