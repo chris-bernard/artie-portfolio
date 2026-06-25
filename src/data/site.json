@@ -1,16 +1,16 @@
 {
-  "title": "Your Name Here | Creative Portfolio",
-  "description": "Portfolio of a designer, developer, and creator. Browse work spanning web, visual design, 3D, video, and more — then reach out.",
+  "title": "Romane's Arty Gallery",
+  "description": "Gallerie d'une passionnée d'arts plastiques",
   "ogSiteName": "Portfolio",
   "shortName": "FOLIO",
-  "tagline": "Designing experiences · Building products · Telling stories",
+  "tagline": "Passionnée d'arts plastiques",
   "themeStorageKey": "portfolio-theme",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "footerAttribution": {
-    "builder": "Built with this open-source template",
-    "builderUrl": "https://github.com/your-github-handle",
-    "host": "Hosted on your platform of choice",
-    "hostUrl": "https://yourdomain.com"
+    "builder": "Astro with this Astro-Portfolio-Theme template",
+    "builderUrl": "https://astro.build/themes/details/astro-portfolio-landing-page-theme/",
+    "host": "Vercel",
+    "hostUrl": "https://vercel.com/"
   },
   "retroTvCount": 21,
   "seoKeywords": [
