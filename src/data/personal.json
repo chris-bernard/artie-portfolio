@@ -1,5 +1,5 @@
 {
-  "name": "Gallerie de Romane",
+  "name": "Galerie de Romane",
   "url": "https://artie-portfolio-jg1ago6o1-chris-bernards-projects-0c83516d.vercel.app/",
   "addressLocality": "",
   "addressRegion": "",
@@ -9,7 +9,7 @@
   "email": "",
   "phone": "",
   "phoneTel": "",
-  "location": "France",
+  "location": "",
   "linkedin": "",
   "github": "",
   "gitlab": "",
@@ -36,5 +36,5 @@
   "heroRole": "Passionnée d'arts plastiques",
   "heroSocialLinks": ["github", "linkedin"],
   "bio": "Bonjour, je m’appelle Romane et j’ai 9 ans. Ma passion, c’est dessiner. J’aime aussi lire. Ça fait 3 ans que je suis des cours d’arts plastiques et ça me plaît beaucoup. Je fais de l’aquarelle, de la sculpture, de la peinture et du dessin au feutre.",
-  "aboutLong": "Depuis 3 ans, je prends des cours d’arts plastiques et ça me passionne. J'ai réalisé plusieurs oeuvres qui me plaisent énormément et que j'aimerais vous partager. J'ai déjà participé à trois expositions."
+  "aboutLong": "Depuis 3 ans, je prends des cours d’arts plastiques et ça me passionne. J'ai réalisé plusieurs œuvres qui me plaisent énormément et que j'aimerais vous partager. J'ai déjà participé à trois expositions."
 }

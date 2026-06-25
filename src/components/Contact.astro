@@ -15,12 +15,12 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12 reveal">
         <p class="text-sm font-semibold tracking-widest text-highlight uppercase mb-3">
-          Contact me
+          Livre d'or
         </p>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Let's talk.</h2>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold section-title">Laissez votre commentaire</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 gap-8">
         <div class="space-y-4 reveal" style="transition-delay: 0.1s;">
           {personalData.email && (
           <div class="card">
@@ -88,36 +88,40 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
             )
           }
 
-          <div class="card">
-            <div class="flex items-center gap-4">
-              <div
-                class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0"
-              >
-                <svg
-                  class="w-5 h-5 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
+          {
+            personalData.location && (
+              <div class="card">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 text-accent"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-semibold text-sm">Location</h3>
+                    <p class="text-slate-400 text-sm">{personalData.location}</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h3 class="text-white font-semibold text-sm">Location</h3>
-                <p class="text-slate-400 text-sm">{personalData.location}</p>
-              </div>
-            </div>
-          </div>
+              )
+          }
 
           {
             socialLinks.length > 0 && (
@@ -158,7 +162,7 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
                 <label
                   for="name"
                   class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"
-                  >Name</label
+                  >Nom</label
                 >
                 <input
                   type="text"
@@ -190,7 +194,7 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
               </div>
             </div>
 
-            <div>
+            <div class="hidden">
               <label
                 for="subject"
                 class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"
@@ -239,7 +243,7 @@ const socialLinks = getSocialLinks(personalData as unknown as Record<string, str
                 ></path>
                 <path d="m21.854 2.147-10.94 10.939"></path>
               </svg>
-              Send Message
+              Commenter le livre d'or
             </button>
           </form>
         </div>
