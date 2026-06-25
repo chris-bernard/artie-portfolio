@@ -59,7 +59,7 @@ const external = siteData.navExternal
           <span class="slider"></span>
         </label>
 
-        <a href="#contact" class="cta-btn hidden sm:inline-flex">Contact Me</a>
+        <a href="#projects" class="cta-btn hidden sm:inline-flex">Voir mes œuvres</a>
         <button id="menu-open-btn" class="hamburger-btn" aria-label="Open menu">
           <span></span>
           <span></span>
@@ -116,7 +116,7 @@ const external = siteData.navExternal
   <div class="overlay-glow" aria-hidden="true"></div>
 
   <div class="overlay-inner">
-    <p class="overlay-eyebrow">Explore</p>
+    <p class="overlay-eyebrow">Menu</p>
     <nav class="overlay-nav">
       {
         sections.map((item, i) => (
@@ -144,29 +144,33 @@ const external = siteData.navExternal
       }
     </nav>
 
-    <div class="overlay-bottom">
-      <p class="overlay-bottom-label">External</p>
-      {
-        external.map((link) => (
-          <a href={link.url} target="_blank" rel="noopener" class="overlay-quick-link">
-            {link.label}
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              class="overlay-ext-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
-        ))
-      }
-    </div>
+    {
+      external && external.length > 0 && (
+        <div class="overlay-bottom">
+          <p class="overlay-bottom-label">External</p>
+          {
+            external.map((link) => (
+              <a href={link.url} target="_blank" rel="noopener" class="overlay-quick-link">
+                {link.label}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="overlay-ext-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+            ))
+          }
+        </div>
+      )
+    }
   </div>
 </div>
 
