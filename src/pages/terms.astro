@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import personalData from '../data/personal.json';
 
 const currentYear = new Date().getFullYear();
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const title = `Terms of Service | ${personalData.name}`;
 ---
 
